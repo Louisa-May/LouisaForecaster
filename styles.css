@@ -1,0 +1,88 @@
+canvas {
+  width: 900px;
+  height: 500px;
+  margin-left: 15%;
+  margin-top: 5%;
+}
+
+.display-none {
+  display: none;
+}
+
+button {
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: #3c4e4b;
+  border-radius: 6px;
+  border-width: 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
+  font-size: 100%;
+  height: 44px;
+  line-height: 1.15;
+  margin: 12px 0 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all 0.2s, box-shadow 0.08s ease-in;
+  width: 20%;
+}
+
+button:hover {
+  background-color: #6cd4c5;
+}
+
+button:active {
+  background-color: #6cd4c5;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#switchButton {
+  width: 100%;
+}
+
+#nextBtn {
+  position: absolute;
+  right: 20%;
+}
+
+#prevBtn {
+  position: absolute;
+  left: 20%;
+}
+
+.no-portrait {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  canvas {
+    width: 500px;
+    height: 400px;
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  canvas {
+    width: 250px;
+    height: 350px;
+    margin-right: 2%;
+  }
+}
+
+@media (max-width: 425px) {
+  .no-portrait {
+    display: block;
+    margin-top: 30%;
+    margin-left: 30px;
+    color: red;
+  }
+}
